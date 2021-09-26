@@ -1,5 +1,5 @@
 import React from "react";
-import { Collapse, Avatar } from "antd";
+import { Collapse, Avatar, Button } from "antd";
 
 const { Panel } = Collapse;
 
@@ -74,6 +74,29 @@ const Main = () => {
                   the <span className="text-red-600">same task</span>.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-gray-200 px-4 py-2 rounded shadow-lg mt-10">
+          <p className="text-blue-500 mb-2 text-2xl">Recommendations</p>
+          <div className="flex flex-row">
+            <img
+              src="https://www.thispersondoesnotexist.com/image"
+              alt="sample"
+              className="h-20 w-20 rounded-full"
+            />
+            <div className="pl-6">
+              <p className="text-2xl">Peter Thiel</p>
+              <p>
+                Best suited for the project:{" "}
+                <span className="bg-black text-white px-2 py-1 rounded">
+                  Project Peaches
+                </span>
+              </p>
+              <p>
+                Current status: <span className="text-blue-600">Free</span>
+              </p>
+              <Button type="primary px-10 mt-2">Appoint</Button>
             </div>
           </div>
         </div>
