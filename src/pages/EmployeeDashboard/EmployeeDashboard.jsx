@@ -1,7 +1,7 @@
 import React from 'react';
 import './EmployeeDashboard.css';
-import { Layout, PageHeader, Card, Tag } from 'antd';
-import {WorkingGeniusCard, MBTICard} from '../../components/components'
+import { Layout, PageHeader, Card, Tag, Row, Col } from 'antd';
+import {WorkingGeniusCard, MBTICard, ColorTraitsCard, ProgramCard, SkillSetCard} from '../../components/components'
 
 function EmployeeDashboard() {
     const { Content } = Layout;
@@ -10,11 +10,11 @@ function EmployeeDashboard() {
     <Layout>
       <PageHeader
       title="John Doe"
-      className="employee-dashboard-page-header"
+      className="employee-dashboard-page-header bg-gray-400"
       subTitle="Department, position"
       tags={<Tag color="blue">Employee ID</Tag>}
       avatar={{
-        size: 40,
+        size: 100,
         style: {
           color: '#f56a00',
           backgroundColor: '#fde3cf',
@@ -23,23 +23,23 @@ function EmployeeDashboard() {
       }}
       />
       <Content className="employee-dashboard-main-content">
-      <MBTICard mbtiType="ISTJ"/>
-      <WorkingGeniusCard genius={["W", "T"]} competency={["E", "G"]} frustration={["D", "I"]}/>
-      <Card title="Skill Set" style={{ width: 300 }}>
-        <p>Card content</p>
-        <p>Card content</p>
-        <p>Card content</p>
-      </Card>
-      <Card title="Colour Traits" style={{ width: 300 }}>
-        <p>Card content</p>
-        <p>Card content</p>
-        <p>Card content</p>
-      </Card>
-      <Card title="Program Efficiency" style={{ width: 300 }}>
-        <p>Card content</p>
-        <p>Card content</p>
-        <p>Card content</p>
-      </Card>
+        <Row gutter={[10, 10]}>
+          <Col span={10} className="gutter-row">
+            <MBTICard mbtiType="ISTJ"/>
+          </Col>
+          <Col span={14} className="gutter-row">
+            <WorkingGeniusCard genius={["W", "T"]} competency={["E", "G"]} frustration={["D", "I"]}/>
+          </Col>
+          <Col span={14} className="gutter-row">
+            <Row gutter={[10, 10]}>
+            <SkillSetCard />
+            <ProgramCard/>
+            </Row>
+          </Col>
+        <Col span={10} className="gutter-row">
+          <ColorTraitsCard sanguine={94} choleric={91} melancholic={86} phlegmatic={87}/>
+        </Col>
+      </Row>
       </Content>
     </Layout>
         

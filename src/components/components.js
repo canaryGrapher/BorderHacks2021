@@ -2,6 +2,12 @@
 // so it's easier & less messy when you import stuffs from app.js
 
 export { default as WorkingGeniusCard }
-from './WorkingGeniusCard/WorkingGeniusCard';
+from './WorkingGeniusCard';
 export { default as MBTICard }
-from './MBTICard/MBTICard';
+from './MBTICard';
+export { default as ColorTraitsCard }
+from './ColorTraitsCard';
+export { default as ProgramCard }
+from './ProgramCard';
+export { default as SkillSetCard }
+from './SkillSetCard';
