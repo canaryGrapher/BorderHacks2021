@@ -107,7 +107,7 @@ function WorkingGeniusCard(props) {
       <Card
           style={{ width: '100%', height:'100%' }}
           title="Your Working Genius Profile"
-          extra={<a className="text-blue-600" href="https://www.workinggenius.com" target="_blank" rel="noreferrer">Read about Working Genius</a>}
+          extra={<a className="text-blue-600" href="https://www.workinggenius.com" target="_blank" rel="noreferrer">Learn more about Working Genius</a>}
           tabList={tabList}
           activeTabKey={selectedTab}
           onTabChange={key => {
