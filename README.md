@@ -132,7 +132,9 @@ data = [
 
 ***
 
-6. Get all employeed
+6. Get all employees
+
+```
 data = [
     {
     "employeeId": "123zzz"
@@ -148,3 +150,4 @@ data = [
     },
     ...
 ]
+```
