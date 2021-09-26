@@ -1,0 +1,9 @@
+.employee-dashboard-page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-dashboard-main-content {
+    padding: 20px;
+    min-height: -webkit-fill-available;
+}
