@@ -68,3 +68,83 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# API Calls
+
+
+** For all the requests below, I will give you an employee id **
+
+1. Employee Data
+```
+data = {
+    "employeeId": "123zzz"
+    "name": "John Doe",
+    "department": "xyz",
+    "position": "coder"
+}
+```
+
+2. MBTI personality type
+```
+data = {
+    "type": "ISTJ"
+    "summary": "Quiet, serious, earn success by thoroughness and dependabi...",
+}
+```
+
+3. Working Genius Profile
+```
+data = {
+    genius=["W", "T"],
+    competency=["E", "G"],
+    frustration=["D", "I"]
+}
+```
+
+3. Color Traits
+```
+data = {
+    Sanguine=91,
+    Choleric=95,
+    Melancholic=86,
+    Phlegmatic=90
+}
+```
+
+4. Program efficiency
+```
+data = [
+    {
+        title: "Excell",
+        Rate: 2,
+    },
+    {
+        title: "Python",
+        Rate: 1,
+    },
+    ...
+]
+```
+
+5. Skillset
+(Honestly No clue how to interpret the dataset lol. Just send me any data so i can display it.)
+
+***
+
+6. Get all employeed
+data = [
+    {
+    "employeeId": "123zzz"
+    "name": "John Doe",
+    "department": "xyz",
+    "position": "coder"
+    },
+    {
+    "employeeId": "234zzz"
+    "name": "Jane Doe",
+    "department": "xyz",
+    "position": "coder"
+    },
+    ...
+]
